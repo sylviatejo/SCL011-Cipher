@@ -1,1 +1,145 @@
-/* Acá va tu código */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+nav {
+    height: 50px;
+    background-color: #FF3399;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 15px;
+    background-color: #FF3399;
+    text-align: right;
+}
+
+li {
+    display: inline;
+    color: white;
+    text-align: right;
+    padding: 50px 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+    padding: 25px 20px;
+}
+
+.welcomePic {
+    background-image: url("../src/imagenes/welcome-picture2.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 1400px;
+    background-size: 100%;
+    text-align: right;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 1px;
+}
+
+.description {
+    margin-right: 500px;
+}
+
+.instructions {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.stepOne {
+    background-color: #EAE8E9;
+    color: #424242;
+    font-size: 15px;
+    font-weight: 100;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    height: 110px;
+    margin: 50px;
+    padding: 20px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.stepTwo {
+    background-color: #EAE8E9;
+    color: #424242;
+    font-size: 15px;
+    font-weight: 100;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    align-content: center;
+    margin-left: 530px;
+    text-align: center;
+    margin-top: -200px;
+}
+
+.stepThree {
+    background-color: #EAE8E9;
+    color: #424242;
+    font-size: 15px;
+    font-weight: 100;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    margin-left: 950px;
+    text-align: center;
+    margin-top: -170px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#offsetNumber {
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+.inputText {
+    margin-top: 10px;
+    margin-left: 400px;
+}
+
+.outputText {
+    margin-left: 700px;
+    margin-top: -138px;
+}
+
+.buttonSend {
+    margin-left: 555px;
+    margin-top: -170px;
+}
+
+.buttonCode {
+    margin-left: 555px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.buttonDecode {
+    margin-left: 430px;
+    margin-top: -42px;  
+    margin-bottom: 20px;  
+}

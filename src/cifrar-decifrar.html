@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sexit - Mensajes para Adultos</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Logotipo y Menú-->
+<header>
+
+        <div class="logo"><a title="Sexit" href="index.html"><img src="../src/imagenes/logotipo-sexit.png" alt="Logotipo Sexit" height="150>"/></a></div>
+        <nav>
+            <ul>
+                    <li><a href="funcionalidad.html">¿Cómo Funciona?</a></li>
+                    <li><a href="cifrar-decifrar.html">Ocultar / Revelar</a></li>
+            </ul>
+        </nav>
+</header>
+    
+<!-- Ingresar Número -->
+
+<section class="main">
+
+        <div class="typeNumber">
+            <input type="text" placeholder="Ingresa tu número" id="offsetNumber">
+        </div>
+        
+<!-- Áreas de Texto -->
+
+        <div class="inputText">
+            <textarea name="inText" rows="10" cols="40" placeholder="Tu mensaje" id="inText"></textarea>
+        </div>
+
+        <div class="outputText">
+            <textarea name="outText" rows="10" cols="40" placeholder="Tu mensaje ocultado o revelado" id="outText"></textarea>
+        </div>
+
+<!-- Botón Enviar -->
+
+        <div class="buttonSend"><button id="sendOffset">ENVIAR CLAVE</button></div>
+
+<!-- Botón Cifrar -->
+
+        <div class="buttonCode"><button id="code">OCULTAR MENSAJE</button></div>
+
+<!-- Botón Decifrar -->
+
+        <div class="buttonDecode"><button id="decode">REVELAR MENSAJE</button></div>
+
+    </section>
+
+<!-- Footer -->
+
+<footer>
+        <p>Creado por Sylvia Tejo</p>
+    </footer>
+    
+    <!-- Javascript -->
+    
+    <script src="index.js"></script>
+    <script src="cipher.js"></script>
+
+</body>
+</html>
