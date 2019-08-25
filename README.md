@@ -1,292 +1,110 @@
-# Cifrado César
+# INTRODUCCIÓN
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
+Imagina que estás en una reunión con amig@s, tu celular sobre la mesa, y a tu pareja, que se ha quedado en casa, se le ocurre tener una “conversación” subida de tono a través de whatsapp contigo. Llegan los mensajes y justo tu amig@ más chismos@, que está junto a ti los lee, sólo porque tenías el celular a la vista.
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+Para situaciones como ésta, nace Sexit, una web para adultos, que permite a los usuarios cifrar sus mensajes para luego ser enviados y recibidos con la más absoluta confidencialidad. Escribes tu mensaje, eliges tu clave, y ¡SEXIT!
 
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+## ¿A QUIENES ESTÁ DIRIGIDO?
 
-- La letra A se cifra como D.
-- La palabra CASA se cifra como FDVD.
-- Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-- Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+SEXIT está dirigida a mayores de 18 años cuya necesidad sea tener “sexting” sin comprometer su intimidad. Para lograr esto, SEXIT permite al usuario escoger una clave numeral, que le permitirá cifrar o descifrar sus mensajes y enviarlos o leerlos cuando estime pertinente, otorgando la privacidad necesaria que las parejas necesitan para vivir su sexualidad en plenitud.
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
+Para esto, el usuario:
 
-## Resumen del proyecto
+1.- Ingresa en la web de SEXIT 
+2.- Se dirige a la sección OCULTAR/REVELAR
+3.- Ingresa un número que servirá como clave para ocultar y revelar sus mensajes. ¡No olvidar compartirlo con tu pareja! 
+4.- Escribir el mensaje.
+5.- Hacer click en Revelar mensaje u Ocultar mensaje según sea el caso.
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
+- SE PUEDE CAMBIAR EL NÚMERO LAS VECES QUE QUIERAS, SÓLO HAY QUE TENER EN CUENTA QUE EL NÚMERO DEBE SER IGUAL YA SEA PARA OCULTAR O REVELAR.
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. 
+- SÓLO PERMITE EL USO DE MAYÚSCULAS Y ESPACIOS
 
-Algunas ideas de ejemplo:
+- SOLO PERMITE NÚMEROS POSITIVOS.
 
-- Crear claves seguras para el email.
-- Encriptar/cifrar una tarjeta de crédito.
-- Herramienta de mensajería interna de una organización de derechos humanos en una zona de conflicto.
-- Mensajería secreta para parejas.
 
+## DECISIONES DE DISEÑO
 
-## Consideraciones generales
+Para el diseño de la interfaz decidí hacer algo limpio, simple y directo, debido a que el público objetivo de SEXIT, llega con una necesidad muy puntual, poder hacer sextear seguros.
 
-- Este proyecto se debe resolver de manera individual.
-- El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
-- Tiempo para completarlo: El proyecto dura 2 semanas, trabaja con sprints y planificando tus tareas.
+A través de un menú, el usuario puede acceder a todas las secciones de la web:
 
-## Objetivos de aprendizaje
+- “HOME” que habla en pocas palabras de qué se trata la página.
 
-En este proyecto aprenderás a construir una aplicación web que interactúe con el usuario a través del navegador y la lógica basada en esa interacción. Dicho en palabras sencillas, aprenderás a:
+- “CÓMO FUNCIONA” que trata en 3 pasos lo que debe hacer el usuario para poder ocupar el servicio.
 
-- Pintar elementos de formulario en la pantalla usando **HTML** y **CSS**.
-- Permitir al usuario interactuar (**eventos del DOM**) y hacer algo cuando ocurran dichos eventos (cifrar/descifrar).
-- Manipular _**strings**_ (cadenas de texto).
-- Usar **control de flujo** (bucles, condicionales, ...).
-- Actualizar la pantalla con los resultados (**manipular el DOM**).
-- **Implementar funciones** dada una descripción de su comportamiento.
-- Verificar tu implementación con **pruebas unitarias**.
-- Entender las **necesidades del usuario** y cómo proponer una solución.
-- Organizar tu tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
+- “OCULTAR / REVELAR” que  es el servicio en sí, de cifrado y descifrado.
 
-## Parte Obligatoria
+El uso de los colores fue escogido con el mismo criterio:
 
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
+- Grises para las imágenes, para darles un carácter sobrio y no vulgar, debido al contenido gráfico en sí de las fotos.
+- Blanco para otorgar simpleza y limpieza. 
+- Negro para destacar la información importante.
 
-- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+El contenido de las imágenes debe ser insinuante, sin caer en lo vulgar. 
 
-#### Definición del producto
 
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.
+## EL PROCESO
 
-- Quiénes son los principales usuarios de producto.
-- Cuáles son los objetivos de estos usuarios en relación con tu producto.
-- Cómo crees que el producto que estás creando está resolviendo sus problemas.
+Partí desarrollando el diagrama de flujo, en donde, después de algunos bocetos, preferí quedarme con la opción que llevaba un menú para facilitar la navegación del usuario en la web por ser una navegación más fluida. 
 
-#### Interfaz de usuario (UI)
+![Bocetos Diagrama de Flujo](https://ibb.co/DGDzhDt)
+![Diagrama de Flujo Escogido](https://ibb.co/Y4gMnPS)
+![Bocetos de Páginas](https://ibb.co/pQtF4wF)
 
-La interfaz debe permitir al usuario:
-- Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
-- Insertar un mensaje (texto) que queremos cifrar.
-- Ver el resultado del mensaje cifrado.
-- Insertar un mensaje (texto) a descifrar.
-- Ver el resultado del mensaje descifrado.
+Después, para planificarme, organicé mis tareas en Trello.
+![Planificación en Trello](https://trello.com/b/Rvzbnp9H/tablero-cifrado-c%C3%A9sar)
 
-#### Scripts / Archivos
+Luego, pasé a diseñar el wireframe de la web. 
 
-* `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
-* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
-  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-* `src/cipher.js`: acá debes implementar el objeto cipher, el cual debe estar
-  _exportado_ en el objeto global (`window`). Este objeto (`cipher`) debe
-  contener dos métodos:
-  - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
-    que queremos cifrar.
-  - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la izquierda en el alfabeto y `string` el mensaje
-    (texto) que queremos descifrar.
-* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
-  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
-* `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
-  tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
-
-## Parte opcional o “Hacker edition”
-
-Las secciones llamadas “Hacker Edition” son opcionales. Si **terminaste** con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
-
-La descripción general de este proyecto no menciona qué pasaría con las letras minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El boilerplate incluye algunos tests (comentados en principio) que puedes usar como punto de partida para implementar el soporte para estos casos.
-
-Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del hacker edition te invitamos a explorar también esta caso por tu cuenta.
-
-## Vamos a los detalles. Consideraciones Técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript (ES6).
-En este proyecto NO está permitido usar librerías o frameworks, sólo
-[vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
-
-No se debe utilizar la _pseudo-variable_ `this`.
-
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
-y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
-setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
-test`.
-
-El _boilerplate_ incluye tests (pruebas) de ejemplo como punto de partida.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene el _boilerplate_.
-
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias y tests de ejemplo:
-
-```text
-./
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── cipher.spec.js
-    ├── headless.js
-    └── index.html
-```
-
-El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
-`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
-automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
-entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí,
-usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
-
-## Evaluación
-
-Te aconsejamos revisar [la rúbrica](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRktPN4ilZtkRN5tUb3DVhgeihwlzk63_-JI3moA-bXpKDbHDioAK2H3qbrwWNb0Ql4wX22Tgv7-PDv/pubhtml)
-para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es una lista de todas las habilidades involucradas en este proyecto y que evaluaremos cuando lo  completes:
-
-### General
-
-| Característica/Habilidad |
-|--------------------------|
-| Completitud |
-
-### Habilidades Blandas
-
-| Habilidad |
-|-----------|
-| Planificación y organización |
-| Autoaprendizaje |
-| Solución de problemas |
-| Dar y recibir feedback |
-| Adaptabilidad |
-| Trabajo en equipo |
-| Comunicación eficaz |
-| Presentaciones |
-
-### Habilidades Técnicas Front-end
-
-| Habilidad |
-|-----------|
-| **CS** |
-| Lógica |
-| Arquitectura |
-| **SCM** |
-| Git |
-| GitHub |
-| **JavaScript** |
-| Estilo |
-| Nomenclatura/semántica |
-| Funciones/modularidad |
-| Tests |
-| **HTML** |
-| Validación |
-| Estilo |
-| Semántica |
-| **CSS** |
-| DRY |
-| Responsive |
-
-### Habilidades Técnicas UX
-
-| Habilidad |
-|-----------|
-| User Centricity |
-
-***
-
-## Pistas sobre cómo comenzar a trabajar en el proyecto
-
-1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
-   condiciones, algo como [Atom](https://atom.io/) o
-   [Code](https://code.visualstudio.com/).
-2. Para ejecutar los comandos a continuación necesitarás una :shell:
-   [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
-   que es un programita que interpreta líneas de comando (command-line
-   interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
-   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
-   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
-   también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
-   aunque recomendaría que consideres probar :penguin: GNU/Linux.
-3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
-   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te 
-   darán acceso de lectura en ese repo.
-4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu _fork_ a tu computadora (copia local).
-5. 📦 Instala las dependencias del proyecto con el comando `npm
-   install`. Esto asume que has instalado [Node.js](https://nodejs.org/) (que
-   incluye [npm](https://docs.npmjs.com/)).
-6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-7. A codear se ha dicho! :rocket:
-
-## Recursos y temas relacionados
-
-A continuación un video de Michelle que te lleva a través de la fórmula
-matemática del Cifrado César y un par de cosas más que debes saber para
-resolver este proyecto. ¡Escúchala con detenimiento y sigue sus consejos! :)
-
-[![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
-
-Diseño de experiencia de usuario (User Experience Design):
-
-- Ideación
-- Prototipado (sketching)
-- Testeo e Iteración
-
-Desarrollo Front-end:
-
-* [Valores](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/01-basics/01-values-variables-and-types)
-* [Tipos](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/01-basics/01-values-variables-and-types)
-* [Variables](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/01-basics/02-variables)
-* [Control de flujo](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/02-flow-control/00-opening)
-* [Tests unitarios](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/11-testing/00-opening)
-* [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
-* [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
-* [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
-* [Documentación de NPM](https://docs.npmjs.com/)
-
-Herramientas:
-- [GitHub y GitHub Pages](https://guides.github.com/)
-- [Guía de Scrum](https://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-es.pdf): solamente para comenzar a entender cómo organizar tu trabajo.
-
-## Checklist
-Esta sección está  para ayudarte a llevar un control de lo que vas completando.
-
-### Parte Obligatoria
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
-  el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
-  problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
-  mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
-  cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
-
-### Parte Opcional: "Hacker edition"
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+![Wireframe Sexit HOME](https://ibb.co/tQ6v3p2)
+![Wireframe Sexit COMO FUNCIONA](https://ibb.co/RbqGDw3)
+![Wireframe Sexit OCULTAR REVELAR](https://ibb.co/Rz6tLPj)
+
+Desde el boceto inicial al prototipo final, no cambió mucho. El único cambio que tuvo, se produjo en la sección “OCULTAR / REVELAR” por que una caja de texto una al lado de la otra separada por botones era muy confusa. Fue por eso que decidí bajar los botones a la caja de entrada del mensaje y así quedó mucho más intuitiva.
+
+El otro cambio que sufrió fue que la sección de “Ingresa tu número” pasó de ser un menú desplegable a ser un input de texto. Esto fue para que el usuario tuviera total libertad de poder ingresar el número de su elección sin tener que restringirlo con selecciones pre establecidas.
+
+Después establecí las guías de diseño (mencionadas en el punto anterior).
+
+Finalmente, comencé el proceso de código. Partí con un pseudo código que me ayudó a ordenar las ideas y saber qué necesitaba para cada cosa de la web, tanto para estudiarlo como para escribirlo en código.
+
+![Pseudo código](https://ibb.co/wgvG1kN)
+
+Para comenzar, escogí hacer el HTML para sentar las bases sobre lo que trabajaría. Luego, pasé a codificar el javascript (acá fue MUY necesario mi pseudo código). Y finalmente terminé con el CSS.
+
+
+## TESTS DE USABILIDAD
+
+Pude hacer tests con dos personas distintas:
+
+1.- Sujeto 1:
+
+Hombre, 33 años, Ingeniero Matemático.
+
+- Encontró poco práctico tener un botón “ENVIAR CLAVE”. Preferiría que el botón “Revelar / ocultar mensaje” hiciera eso también.
+
+- Intentó escribir con minúsculas. En ningún lado advierte que SÓLO cifra usando mayúsculas.
+
+
+2. -Sujeto 2:
+
+Mujer, 33 años, Educadora Diferencial.
+
+- Encontró poco práctico tener un botón “ENVIAR CLAVE”. Preferiría que el botón “Revelar / ocultar mensaje” hiciera eso también.
+
+- Intentó escribir con minúsculas. En ningún lado advierte que SÓLO cifra usando mayúsculas. Le gustaría que también pudiera aceptar minúsculas.
+
+- Le gustaría que tuviera vinculación con WhatsApp.
+
+
+#### RESULTADOS DE LOS TESTS:
+
+En el siguiente orden, contemplaría hacer los siguientes cambios a futuro:
+
+1.- Hacer código para que acepte minúsculas.
+
+2.- Remover el botón “Enviar Clave”, dejando sólo dos botones funcionales.
+
+3.- Vinculación con WhatsApp.
