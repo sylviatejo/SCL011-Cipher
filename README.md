@@ -49,18 +49,18 @@ El contenido de las imágenes debe ser insinuante, sin caer en lo vulgar.
 
 Partí desarrollando el diagrama de flujo, en donde, después de algunos bocetos, preferí quedarme con la opción que llevaba un menú para facilitar la navegación del usuario en la web por ser una navegación más fluida. 
 
-![Bocetos Diagrama de Flujo](https://ibb.co/DGDzhDt)
-![Diagrama de Flujo Escogido](https://ibb.co/Y4gMnPS)
-![Bocetos de Páginas](https://ibb.co/pQtF4wF)
+![Bocetos Diagrama de Flujo](https://i.ibb.co/FWWS3sj/IMG-5443.jpg)
+![Diagrama de Flujo Escogido](https://i.ibb.co/5kyHK3J/IMG-5442.jpg)
+![Bocetos de Páginas](https://i.ibb.co/YdGdYFV/IMG-5446.jpg)
 
 Después, para planificarme, organicé mis tareas en Trello.
 ![Planificación en Trello](https://trello.com/b/Rvzbnp9H/tablero-cifrado-c%C3%A9sar)
 
 Luego, pasé a diseñar el wireframe de la web. 
 
-![Wireframe Sexit HOME](https://ibb.co/tQ6v3p2)
-![Wireframe Sexit COMO FUNCIONA](https://ibb.co/RbqGDw3)
-![Wireframe Sexit OCULTAR REVELAR](https://ibb.co/Rz6tLPj)
+![Wireframe Sexit HOME](https://i.ibb.co/j3Py3Fn/Captura-de-pantalla-2019-08-23-a-las-12-01-37-a-m.png)
+![Wireframe Sexit COMO FUNCIONA](https://i.ibb.co/ZSkzk5T/Captura-de-pantalla-2019-08-25-a-las-6-36-59-p-m.png)
+![Wireframe Sexit OCULTAR REVELAR](https://i.ibb.co/Nrkph3R/Captura-de-pantalla-2019-08-25-a-las-6-37-01-p-m.png)
 
 Desde el boceto inicial al prototipo final, no cambió mucho. El único cambio que tuvo, se produjo en la sección “OCULTAR / REVELAR” por que una caja de texto una al lado de la otra separada por botones era muy confusa. Fue por eso que decidí bajar los botones a la caja de entrada del mensaje y así quedó mucho más intuitiva.
 
@@ -70,7 +70,7 @@ Después establecí las guías de diseño (mencionadas en el punto anterior).
 
 Finalmente, comencé el proceso de código. Partí con un pseudo código que me ayudó a ordenar las ideas y saber qué necesitaba para cada cosa de la web, tanto para estudiarlo como para escribirlo en código.
 
-![Pseudo código](https://ibb.co/wgvG1kN)
+![Pseudo código](https://i.ibb.co/ccRGSqr/IMG-5448.jpg)
 
 Para comenzar, escogí hacer el HTML para sentar las bases sobre lo que trabajaría. Luego, pasé a codificar el javascript (acá fue MUY necesario mi pseudo código). Y finalmente terminé con el CSS.
 
